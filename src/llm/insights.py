@@ -1,7 +1,7 @@
 from collections import Counter
 
 
-def generate_insights(sentiment_df, keywords):
+def generate_insights(sentiment_df, keywords, theme_counts):
     transformer_counts = Counter(sentiment_df["transformer_sentiment"])
 
     top_positive = sentiment_df[
@@ -14,6 +14,9 @@ def generate_insights(sentiment_df, keywords):
 
     keyword_list = [word for word, count in keywords[:5]]
 
+    sorted_themes = sorted(theme_counts.items(), key=lambda x: x[1], reverse=True)
+    top_theme = sorted_themes[0][0] if sorted_themes else "Unknown"
+
     insights = []
 
     insights.append(
@@ -23,19 +26,22 @@ def generate_insights(sentiment_df, keywords):
 
     if keyword_list:
         insights.append(
-            "The most frequently discussed themes are: " + ", ".join(keyword_list) + "."
+            "The most frequently discussed keywords are: " + ", ".join(keyword_list) + "."
+        )
+
+    if sorted_themes:
+        insights.append(
+            f"The most dominant business theme is '{top_theme}', indicating it is the most common area mentioned across the reviews."
         )
 
     if top_negative:
         insights.append(
-            "Negative feedback is primarily associated with delivery delays, confusing user experience, "
-            "refund friction, and weak support interactions."
+            "Negative feedback is primarily associated with delivery delays, confusing user experience, refund friction, and weak support interactions."
         )
 
     if top_positive:
         insights.append(
-            "Positive feedback is largely driven by product quality, fast shipping, smooth experiences, "
-            "and effective service resolution."
+            "Positive feedback is largely driven by product quality, fast shipping, smooth experiences, and effective service resolution."
         )
 
     disagreement_count = (
