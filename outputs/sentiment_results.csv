@@ -1,0 +1,11 @@
+text,negative,neutral,positive,compound,sentiment,transformer_sentiment,transformer_score
+The delivery was delayed and customer support was unhelpful.,0.164,0.603,0.233,0.2023,positive,negative,0.9996944665908813
+Amazing product quality and super fast shipping.,0.0,0.394,0.606,0.8271,positive,positive,0.9998775720596313
+The app crashes often and the login process is frustrating.,0.244,0.756,0.0,-0.4404,negative,negative,0.9996964931488037
+Really happy with the overall experience and support team.,0.0,0.511,0.489,0.7713,positive,positive,0.9998801946640015
+"Terrible packaging, but the product itself is decent.",0.227,0.773,0.0,-0.2617,negative,positive,0.9995664954185486
+The service was excellent and the issue was resolved quickly.,0.0,0.597,0.403,0.6597,positive,positive,0.9986135959625244
+I am disappointed with the refund process.,0.383,0.617,0.0,-0.4767,negative,negative,0.9997957348823547
+Great value for money and easy to use.,0.0,0.347,0.653,0.8555,positive,positive,0.9998100399971008
+The interface is confusing and slow.,0.275,0.725,0.0,-0.2263,negative,negative,0.9997743964195251
+Very satisfied with the purchase and smooth experience.,0.0,0.694,0.306,0.4754,positive,positive,0.9998446702957153

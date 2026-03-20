@@ -1,0 +1,6 @@
+1. Out of 10 reviews, 6 are positive and 4 are negative according to the transformer model.
+2. The most frequently discussed keywords are: support, product, process, experience, delivery.
+3. The most dominant business theme is 'Positive Experience', indicating it is the most common area mentioned across the reviews.
+4. Negative feedback is primarily associated with delivery delays, confusing user experience, refund friction, and weak support interactions.
+5. Positive feedback is largely driven by product quality, fast shipping, smooth experiences, and effective service resolution.
+6. There are 2 reviews where the lexicon-based and transformer-based models disagree, highlighting the importance of contextual sentiment analysis.
